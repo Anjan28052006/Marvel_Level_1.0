@@ -1,6 +1,6 @@
-```
-TASK 1: Working of a Version Control
-````
+
+# **TASK 1: Working of a Version Control**
+
 
 
 ---
@@ -65,9 +65,8 @@ For example, merging a `feature` branch into `main` after development is complet
 
 ---
 
-```
-TASK 8: IaaS, PaaS and SaaS
-```
+# **TASK 8: IaaS, PaaS and SaaS**
+
 
 
 ## **Cloud and Cloud Providers**
@@ -168,5 +167,6 @@ Google Workspace, Microsoft 365, Salesforce, Zoom, Dropbox
 A business uses Google Workspace for emails, file sharing, and collaboration — no server setup needed.
 
 ---
+
 
 
