@@ -64,6 +64,16 @@ For example, merging a `feature` branch into `main` after development is complet
 `git cherry-pick` allows you to apply a specific commit from one branch onto another without merging the entire branch.
 
 ---
+# **TASK 2: Database task - DynamoDB**
+
+
+In this task, I learned how to use Amazon DynamoDB, a fully managed NoSQL database provided by Amazon Web Services. I created a simple user login system where user credentials were stored securely in a DynamoDB table using a partition key. I implemented user registration (write operation using WCU) and login validation (read operation using RCU). I understood how DynamoDB handles scaling, replication across Availability Zones, and throttling when capacity limits are exceeded. I also learned the difference between NoSQL databases like DynamoDB and relational databases like MySQL, especially in terms of schema design, scalability, and performance.
+
+| Server       |     command |
+|--------------|--------------|
+| ![Img1](https://raw.githubusercontent.com/Anjan28052006/Marvel_Level_1.0/refs/heads/main/Screenshot%202026-02-27%20050208.png)| ![Img2](https://raw.githubusercontent.com/Anjan28052006/Marvel_Level_1.0/refs/heads/main/Screenshot%202026-02-27%20050650.png) |
+
+---
 
 # **TASK 3: Create an application on EC2 instance**
 ### EC2 (IaaS) Short Report
@@ -96,6 +106,30 @@ When a user accesses the CloudFront URL, the request is routed to the nearest ed
 This implementation improves performance, reduces latency, minimizes load on S3, and enables scalable global content delivery.
 
 [CloudFront Distribution URL](https://dslvx59l94fp9.cloudfront.net/TvShows.html)
+
+---
+
+# **TASK 5: Introduction to Kali Linux & Basic Penetration Testing**
+
+In this task, I learned about Kali Linux, a Linux distribution specifically designed for penetration testing and security auditing. Kali Linux contains many pre-installed tools used to identify vulnerabilities, scan networks, and test system security.
+
+We performed a basic penetration test on an intentionally vulnerable virtual machine called `Metasploitable 2`. The attacker machine (`Kali Linux`) and the target machine (`Metasploitable 2`) were configured on the same network to ensure proper communication between them.
+
+We used `Nmap (Network Mapper)` to scan the target system using the command:
+```
+nmap -sV <IP_address>
+```
+
+The -sV option was used to detect service versions running on open ports. From the scan results, we identified multiple open ports, including FTP running on Port 21. The scan revealed that the FTP service was running `vsftpd 2.3.4`, a version known to contain a **backdoor vulnerability**.
+
+To exploit this vulnerability, we used the Metasploit Framework. We launched Metasploit using `msfconsole` and selected the appropriate exploit module:
+```
+use exploit/unix/ftp/vsftpd_234_backdoor
+```
+
+After configuring the target IP address , we executed the exploit. Upon successful exploitation, a remote command shell was obtained, demonstrating how attackers can gain unauthorized access if services are outdated and unpatched.
+
+![img](https://raw.githubusercontent.com/Anjan28052006/Marvel_Level_1.0/refs/heads/main/WhatsApp%20Image%202026-02-26%20at%207.36.06%20PM.jpeg)
 
 ---
 
@@ -145,6 +179,37 @@ Cloud computing provides different levels of services depending on how much cont
 **SaaS (Software as a Service)** delivers ready-to-use software accessible through a browser. Users do not manage infrastructure or platforms; the provider handles everything including hosting, updates, and security. SaaS offers quick access, anywhere usage, and low maintenance. Examples include Google Workspace, Microsoft 365, Zoom, and Salesforce.
 
 Together, these service models provide a spectrum of cloud services from full control (IaaS) to fully managed applications (SaaS), allowing businesses and developers to choose the level of management that fits their needs.
+
+---
+**#TASK 9: Encryption Techniques - Secure Messaging App**
+
+---
+Encryption is the process of converting plaintext into ciphertext to ensure secure communication. In this task, classical ciphers such as `Caesar`, `Vigenère`, and `substitution cipher` were studied along with modern encryption techniques. `Symmetric encryption` uses a single secret key for both encryption and decryption, while `asymmetric encryption` uses public and private keys, such as in `RSA`, which relies on large prime numbers for security. Encryption differs from hashing algorithms like `SHA-256`, as encryption is reversible whereas hashing is not. A simple secure chat application was implemented using Python and PyCrypto to encrypt and decrypt messages successfully.
+
+`Example for word HELLO`
+```python
+HELLO
+  ↓
+HELLO + spaces (to make 16 bytes)(padding)
+  ↓
+Converted to bytes
+  ↓
+Encrypted using AES key
+  ↓
+Converted to Base64
+  ↓
+Sent
+  ↓
+Base64 decoded
+  ↓
+Decrypted using same key
+  ↓
+Spaces removed
+  ↓
+HELLO
+
+```
+![img](https://raw.githubusercontent.com/Anjan28052006/Marvel_Level_1.0/refs/heads/main/Screenshot%202026-02-27%20070113.png)
 
 ---
 
