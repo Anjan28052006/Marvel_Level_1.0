@@ -89,10 +89,7 @@ ssh -i key.pem ec2-user@<Public-IP>
 This task provided hands-on experience in configuring EC2 resources and demonstrated how dynamic applications can be deployed using AWS EC2.
 
 
-| Server       |     command |
-|--------------|--------------|
-| ![Img1](https://raw.githubusercontent.com/Anjan28052006/Marvel_Level_1.0/refs/heads/main/Screenshot%202026-01-12%20214948.png)| ![Img2](https://raw.githubusercontent.com/Anjan28052006/Marvel_Level_1.0/refs/heads/main/Screenshot%202026-01-12%20215016.png) |
-
+![Img1](https://raw.githubusercontent.com/Anjan28052006/Marvel_Level_1.0/refs/heads/main/Screenshot%202026-01-12%20214948.png)
 ---
 
 # **TASK 4: AWS CloudFront – Serving Content from Multiple S3 Buckets**
@@ -224,4 +221,5 @@ Selenium is needed because requests + BeautifulSoup alone cannot access JavaScri
 Successfully retrieved multiple job postings in real-time.
 
 ![img](https://raw.githubusercontent.com/Anjan28052006/Marvel_Level_1.0/refs/heads/main/Screenshot%202026-01-13%20081121.png)
+
 
